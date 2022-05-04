@@ -11,7 +11,11 @@
 * cd ../ (After you add some information to the new file)
 * go run main.go
 
-
+## Capitilazation Explained:
+`
+You may have noticed that all of the declarations in the greet.go file you called were capitalized. Go does not have the concept of public, private, or protected modifiers like other languages do. External visibility is controlled by capitalization. Types, variables, functions, and so on, that start with a capital letter are available, publicly, outside the current package. A symbol that is visible outside its package is considered to be exported.
+`
+* [How To Write Packages in Go](https://www.digitalocean.com/community/tutorials/how-to-write-packages-in-go)
 
 ## Credit
 * [How to Use Go Modules](https://www.digitalocean.com/community/tutorials/how-to-use-go-modules)
