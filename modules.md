@@ -1,9 +1,9 @@
-# Working with modules
-* mkdir scratch
+# Working with modules(Examples folder)
+* mkdir scratch (This is the external/root folder)
 * cd scratch
-* mkdir cmd
+* mkdir cmd (This is the location of main.go)
 * cd cmd
-* go mod init cmd
+* go mod init cmd (You have to have main.go and go.mod in the same folder)
 * powershell new-item main.go (Edit the file with a simple hello world)
 * go run main.go
 * mkdir networking
