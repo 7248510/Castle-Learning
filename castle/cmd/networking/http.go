@@ -55,7 +55,7 @@ func (s *httpServer) handleProduce(w http.ResponseWriter, r *http.Request) {
 	var req ProduceRequest
 	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+		http.Error(w, "Illegal base64 value. Please re-encode the request", http.StatusBadRequest)
 		return
 	}
 	off, err := s.Log.Append(req.Record)
