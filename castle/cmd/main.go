@@ -21,7 +21,7 @@ func main() {
 	Let's Go #3
 	The Windows curl commands are do not work out of the box. An alternative is WSL, VM/Container or Git bash:
 
-	curl -X POST localhost:8080 -d '{"record": {"value": "Hello world"}}' = Broken
-	curl -X POST localhost:8080 -d '{"record": {"value": "SGVsbG8gd29ybGQ="}}' = Accepted
+	curl -X POST IP:8080 -d '{"record": {"value": "SGVsbG8gd29ybGQ="}}' = Accepted
+	curl -X GET IP:8080 -d '{"offset": 0}'
 	*/
 }
